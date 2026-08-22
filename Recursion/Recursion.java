@@ -36,7 +36,7 @@ import java.util.*;
 
 //this is to find sum of n natural numbers.
 
-class F{
+class Recursion{
     static int sum(int n){
         if(n == 0) {
             return 0;
