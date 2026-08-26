@@ -1,23 +1,30 @@
 //SELECTIONSORT
-
-import java.utill.*;
+//keep a pionter i on the first element of the array and then start searching with a pointer j for
+// element which is the smallest then swap it with the element on i and i++ then repeat the same;
+//import java.utill.*;
 
 class selectionSort{
 
-public static viod selectionSort(int arr[]){
+public static void selectionSort(int arr[]){
+    for(int i=0; i<arr.length-1; i++){
+        int minIndex = i;
+        for(int j = i+1; j<arr.length; j++){
+            if(arr[j] < arr[minIndex]){
+                minIndex = j;
+            }
+        }
+        int temp = arr[minIndex];
+        arr[minIndex] = arr[i];
+        arr[i] = temp;
+    }
+}
+public static void main(String args[]){
+    int[] arr = {5, 3, 8, 2, 4};
 
-for(int i=0; i<arr.length-1; i++){
-	int temp = i;
-	for(int j=i+1; j<arr.length; j++){
-		if (arr[j] < arr[temp]){
-			temp = j;
-		}
-	}
-	
+    selectionSort(arr);
+
+    for (int num : arr) {
+        System.out.print(num + " ");
+    }
 }
 }
-
-}
-
-
- this code needs to be rewritten to improve understanding

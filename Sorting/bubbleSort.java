@@ -1,3 +1,9 @@
+//BUBBLESORT
+//simply compare first 2 elements if the second is smaller swap them,
+// then check for 2nd and 3rd if 3 is bigger swap them then go for 3rd and 4th ans so on..
+// (each traversal from 1 to n will pick the largest and place it in last of the array)
+// then repeat the same from the first element again
+
 import java.util.*;
 
 class bubbleSort{
